@@ -1,0 +1,66 @@
+.hero {
+    display: flex;
+    gap: 1rem;
+    padding: 0 1rem;
+    min-height: 550px;
+    height: calc(100vh - 80px);
+    max-height: 700px;
+    align-items: center;
+}
+
+.heroLeft {
+    flex: 1;
+}
+
+.heroRight {
+    flex: 1;
+}
+
+.heroLeft h3 {
+    font-size: 2rem;
+}
+
+.heroLeft h1 {
+    font-size: 5rem;
+    line-height: 100%;
+    letter-spacing: 3px;
+    font-weight: 900;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
+}
+
+.heroLeft p {
+    color: grey;
+    text-align: justify;
+}
+
+.buttons {
+    display: flex;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.buttons button {
+    all: unset;
+    padding: 1rem 2rem;
+    background: var(--gradient);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background: var(--hover-gradient);
+}
+
+.buttons button a {
+    color: white;
+}
+
+.heroRight img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

@@ -1,0 +1,107 @@
+.contactSection {
+    padding: 80px 1rem;
+}
+
+.contactForm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem
+}
+
+.contactForm>div {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    min-width: 300px;
+    width: 50%;
+}
+
+.contactForm>div>label {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contactForm>div>input {
+    all: unset;
+    border-bottom: 2px solid var(--color-purple);
+    padding: .5rem 1rem;
+    background-color: rgba(0, 0, 0, 0.027);
+    border-radius: 5px;
+}
+
+.contactForm>div>textarea {
+    all: unset;
+    border-bottom: 2px solid var(--color-purple);
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.027);
+    border-radius: 5px;
+    padding: .5rem 1rem;
+}
+
+.contactForm .submit>button {
+    all: unset;
+    text-align: center;
+    padding: 1rem;
+    background: var(--gradient);
+    cursor: pointer;
+    transition: .5s;
+    border-radius: 5px;
+    color: white;
+}
+
+.contactForm .submit>button:hover {
+    background: var(--hover-gradient);
+}
+
+/* Extras */
+.emailSuccess {
+    background-color: var(--color-purple);
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    width: 100vw;
+    height: 40px;
+    display: flex;
+    padding-top: 3.8rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.emailSuccess>h1,
+.emailError>h1 {
+    font-weight: 400;
+    font-size: 1rem;
+    color: white;
+}
+
+.emailError {
+    background-color: #9753ff;
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    width: 100vw;
+    height: 40px;
+    display: flex;
+    padding-top: 3.8rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 1150px) {
+    .contactForm>div {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contactSection>h1 {
+        font-size: 2rem;
+    }
+
+    .contactForm {
+        padding: 0 1rem;
+    }
+}

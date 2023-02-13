@@ -1,0 +1,48 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 1rem;
+    background-color: white;
+    z-index: 10;
+    transition: .5s;
+}
+
+.stickyNav {
+    position: sticky;
+    top: 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.11);
+    border-radius: 10px;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 900;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.mainMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.mainMenu li {
+    cursor: pointer;
+}
+
+.mainMenu li:nth-child(5) a {
+    background: var(--gradient);
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: .6rem 2rem;
+}
+
+.mainMenu li:nth-child(5) a:hover {
+    background: var(--hover-gradient);
+}

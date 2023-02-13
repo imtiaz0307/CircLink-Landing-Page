@@ -1,0 +1,16 @@
+.about {
+    min-height: 100vh;
+    padding: 80px 1rem;
+    text-align: center;
+}
+
+.about h3 {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.about p {
+    color: grey;
+    text-align: justify;
+    font-size: 1.1rem;
+}
