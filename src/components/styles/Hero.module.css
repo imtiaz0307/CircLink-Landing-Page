@@ -64,3 +64,53 @@
     height: 100%;
     object-fit: cover;
 }
+
+
+@media screen and (max-width: 860px) {
+    .heroRight {
+        display: none;
+    }
+
+    .heroLeft h1 {
+        font-size: 6rem;
+        text-align: center;
+    }
+
+    .heroLeft h3 {
+        text-align: center;
+    }
+
+    .heroLeft p {
+        text-align: center;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero {
+        padding: 0 .5rem;
+    }
+
+    .heroLeft h1 {
+        font-size: 20vw;
+    }
+
+    .heroLeft h3 {
+        font-size: 7vw;
+    }
+
+    .heroLeft p {
+        font-size: .8rem;
+    }
+
+    .buttons {
+        gap: .5rem;
+    }
+
+    .buttons button {
+        padding: 10px 20px;
+    }
+}

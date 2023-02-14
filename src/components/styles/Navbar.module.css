@@ -7,6 +7,7 @@
     background-color: white;
     z-index: 10;
     transition: .5s;
+    position: relative;
 }
 
 .stickyNav {
@@ -29,6 +30,8 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    height: fit-content;
+    transform: translateY(0);
 }
 
 .mainMenu li {
@@ -45,4 +48,48 @@
 
 .mainMenu li:nth-child(5) a:hover {
     background: var(--hover-gradient);
+}
+
+@media screen and (max-width:750px) {
+    .hamburger {
+        height: 30px;
+        width: 30px;
+        /* background-color: black; */
+        z-index: 10;
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 4px;
+        cursor: pointer;
+    }
+
+    .line {
+        height: 3px;
+        width: 100%;
+        background: var(--gradient);
+        border-radius: 10px;
+        transition: .5s;
+    }
+
+    .mainMenu {
+        position: absolute;
+        top: 20px;
+        right: calc(1rem - 8px);
+        flex-direction: column;
+        background-color: white;
+        padding: 2rem;
+        border: 2px solid rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        height: 0;
+        transform: translateY(-300px);
+        overflow: hidden;
+        transition: .5s;
+    }
+
+    .showMenu {
+        transform: translateY(0);
+        height: fit-content;
+    }
 }
