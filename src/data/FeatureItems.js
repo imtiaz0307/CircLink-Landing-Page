@@ -2,7 +2,7 @@ export const featureItems = [
     {
         title: 'User Profile Management',
         description: "CircLink offers a user-friendly platform for profile management and social connections. With CircLink, users have the ability to create and update their profiles, showcasing their interests, background, and personality. Additionally, CircLink provides a convenient follow/unfollow functionality, allowing users to build their network and keep up with those they care about. Whether you're looking to expand your social circle, or simply want to stay connected with friends and family, CircLink's user profile management and follow/unfollow functionality make it easy and intuitive. With its seamless integration, you can focus on building meaningful relationships and creating a vibrant online community.",
-        img: '/user_feature.jpg'
+        img: '/user_feature.png'
     },
     {
         title: 'Post Management',
